@@ -94,13 +94,13 @@ const TicketDetail = () => {
                 onChange={handleChange}
                 className="w-full border border-gray-300 rounded-lg px-3 py-2"
               />
-            </div>
+            </div>            
             <div>
               <label className="block text-sm font-medium text-gray-700">Status</label>
               <select
                 name="status"
                 value={editableTicket.status}
-                onChange={handleChange}
+                onChange={handleChange} 
                 className="w-full border border-gray-300 rounded-lg px-3 py-2"
               >
                 <option value="open">Open</option>

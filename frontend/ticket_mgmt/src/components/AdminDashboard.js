@@ -39,8 +39,8 @@ const AdminDashboard = () => {
   }, []); 
 
 
-  const [isAuthenticated, setIsAuthenticated] = useState(true); // or false to simulate not logged in
-  const [userRole, setUserRole] = useState('admin'); // Change this to 'user' for a regular user
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
+  const [userRole, setUserRole] = useState('admin');
 
 
   return (
