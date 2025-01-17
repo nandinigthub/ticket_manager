@@ -4,8 +4,7 @@ from .views import (
     UserRegistrationView,
     AdminRegistrationView,
     UserLoginView,
-    AdminLoginView,
-    AdminOnlyView,
+    AdminLoginView
 )
 
 urlpatterns = [

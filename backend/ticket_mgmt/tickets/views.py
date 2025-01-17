@@ -18,14 +18,14 @@ class TicketViewSet(ModelViewSet):
             return Ticket.objects.all()
         return Ticket.objects.filter(user=self.request.user)
 
-    def create(self, request):
+    def create(self, request,*args, **kwargs):
         # Create a new ticket and assign the current user as the owner
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save(user=request.user)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
-    def update(self, request,**kwargs):
+    def update(self, request,*args, **kwargs):
         # Update an existing ticket.
         partial = kwargs.pop('partial', False)
         instance = self.get_object()
@@ -34,7 +34,7 @@ class TicketViewSet(ModelViewSet):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    def destroy(self, request):
+    def destroy(self, request,*args, **kwargs):
         # Delete a ticket. Only the ticket owner or admin users can delete it.
  
         instance = self.get_object()
