@@ -56,7 +56,7 @@ python -m venv venv
 
 ```bash
 cd..
-pip freeze > requirements.txt
+pip freeze> requirements.txt
 pip install -r requirements.txt
 cd ticket_mgmt
 ```
