@@ -4,6 +4,8 @@
 
 Ticket Manager is a web application designed to streamline the management of tickets for both users and admins. Users can create tickets, while admins can manage and filter them based on various criteria. The application supports features such as user authentication, ticket creation, status updates, and filtering based on status, priority, and user.
 
+Demo Video: https://drive.google.com/file/d/1rs157k2qmkv7UzZPUGlYUdIQT2p_csdG/view?usp=sharing
+
 ## Features
 
 - **User Features**:
@@ -56,7 +58,7 @@ python -m venv venv
 
 ```bash
 cd..
-pip freeze> requirements.txt
+pip freeze > requirements.txt
 pip install -r requirements.txt
 cd ticket_mgmt
 ```
